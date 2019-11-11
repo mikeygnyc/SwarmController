@@ -1,0 +1,22 @@
+{
+    "dockerConfigs": [
+        {
+            "protocol": "http",
+            "host": "10.75.51.101",
+            "port": 2375,
+            "socketPath": ""
+        },
+        {
+            "protocol": "http",
+            "host": "10.75.51.102",
+            "port": 2375,
+            "socketPath": ""
+        },
+        {
+            "protocol": "http",
+            "host": "10.75.51.103",
+            "port": 2375,
+            "socketPath": ""
+        }
+    ]
+}
