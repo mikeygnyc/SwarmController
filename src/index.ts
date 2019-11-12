@@ -21,6 +21,7 @@ function gotServices() {
 function done() {
     doneCt++;
     if (doneCt === 4) {
+        docker_controller.StartCleaner();
         StartAPI();
         test();
     }
@@ -35,7 +36,7 @@ function gotNodes() {
 function gotContainers() {
     docker_controller.Containers.forEach((value: Docker.ContainerInfo) => {
         // console.log(value.Id);
-        value.Names?console.log(value.Names[0]):"";
+        console.log(`${value.Names?(value.Names[0]):""}-${value.State}`)
     });
     done();
 }
